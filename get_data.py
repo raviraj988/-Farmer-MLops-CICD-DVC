@@ -4,9 +4,9 @@ import wget
 # data from https://www.sciencedirect.com/science/article/pii/S2352340920303048
 
 # Download the zipped dataset
-url = 'https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/yshdbyj6zy-1.zip'
-zip_name = "data.zip"
-wget.download(url, zip_name)
+#url = 'https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/yshdbyj6zy-1.zip'
+#zip_name = "data.zip"
+#wget.download(url, zip_name)
 
 # Unzip it and standardize the .csv filename
 import zipfile
