@@ -13,10 +13,7 @@ jobs:
         run: |
            pip install -r requirements.txt
            dvc init
-           sudo apt install vim
-           wget https://ars.els-cdn.com/content/image/1-s2.0-S2352340920303048-mmc1.zip
-           vim data.zip
-           mv 1-s2.0-S2352340920303048-mmc1.zip data.zip
+           wget -O data.zip https://ars.els-cdn.com/content/image/1-s2.0-S2352340920303048-mmc1.zip
            dvc repro
            
            git fetch --prune
