@@ -13,8 +13,9 @@ jobs:
         run: |
            pip install -r requirements.txt
            dvc init
+           apt-get update && apt-get install -y vim
            wget https://ars.els-cdn.com/content/image/1-s2.0-S2352340920303048-mmc1.zip
-           vi data.zip
+           vim data.zip
            mv 1-s2.0-S2352340920303048-mmc1.zip data.zip
            dvc repro
            
